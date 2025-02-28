@@ -1,0 +1,28 @@
+# -------------------------------
+# Node (Vue) specific ignores
+# -------------------------------
+node_modules/
+dist/                
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env                
+
+# -------------------------------
+# Python (Flask) specific ignores
+# -------------------------------
+venv/
+_pycache_/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+.env             
+
+# -------------------------------
+# OS and editor-specific files
+# -------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

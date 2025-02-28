@@ -1,0 +1,21 @@
+@use './_variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-text;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .btn-wrapper {
+    text-align: start;
+  }
+}
