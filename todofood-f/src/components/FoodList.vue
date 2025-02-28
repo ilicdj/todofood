@@ -3,7 +3,6 @@ import { useFoodList } from '@/stores/food'
 import { storeToRefs } from 'pinia'
 import { onMounted } from 'vue'
 import SingleMeal from './SingleMeal.vue'
-// import AddMealModal from './AddMealModal.vue'
 
 const foodStore = useFoodList()
 const { food } = storeToRefs(foodStore)
@@ -28,9 +27,9 @@ onMounted(() => {
   padding: 0 1rem;
 
   @media (min-width: 768px) {
-    max-height: 70vh; // Changed from height to max-height
-    overflow-y: auto; // Changed from scroll to auto for better UX
-    overscroll-behavior: contain; // Prevents overscroll behavior issues
+    max-height: 70vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 }
 </style>

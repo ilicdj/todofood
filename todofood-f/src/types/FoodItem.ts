@@ -1,5 +1,5 @@
 export interface FoodItem {
-  "id": Number
+  "id"?: Number
   "meal_name": String
   "ingredients": String
   "description": String
