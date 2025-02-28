@@ -8,7 +8,7 @@ load_dotenv()
 app = Flask(__name__)
 
 # Enable CORS for all routes
-CORS(app, origins=["http://localhost:5173"])  # Specify the frontend URL
+CORS(app, origins=["https://todofood-webapp.onrender.com"])  # Specify the frontend URL
 
 # Database config (Replace with your actual Neon.tech connection string)
 DATABASE_URL = os.getenv("DATABASE_URL")
