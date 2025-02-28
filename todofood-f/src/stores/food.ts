@@ -8,15 +8,15 @@ export const useFoodList = defineStore('food', {
   }),
   actions: {
     async getFood() {
-      const response = await axios.get('http://127.0.0.1:5000/food')
+      const response = await axios.get('https://todofood.onrender.com/food')
       this.food = response.data
     },
     async addFood(newMeal: FoodItem) {
-      const response = await axios.post('http://127.0.0.1:5000/food', newMeal)
+      const response = await axios.post('https://todofood.onrender.com/food', newMeal)
       this.food.push(response.data)
     },
     async deleteFood(id: number) {
-      await axios.delete(`http://127.0.0.1:5000/food/${id}`)
+      await axios.delete(`https://todofood.onrender.com/food/${id}`)
       this.food = this.food.filter(meal => meal.id !== id)
     }
   }
